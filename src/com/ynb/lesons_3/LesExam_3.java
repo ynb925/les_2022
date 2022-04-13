@@ -23,8 +23,7 @@ public class LesExam_3 {
         //
         int z = ((a + b + c + d + f + e + h + j + l + m) / 10);
         System.out.println(z);
-        double z_ = z;
-        System.out.println(z_);
+        System.out.println((double) z);
 
     }
 }
