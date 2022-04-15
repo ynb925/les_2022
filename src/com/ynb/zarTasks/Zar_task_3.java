@@ -17,14 +17,8 @@ public class Zar_task_3 {
         }
         System.out.println();
         for (int b = start; b <= finish; b++) {
-            int resEven = b % 2;
-            System.out.println(resEven); // out all numbers %2
 
-        }
-        System.out.println();
-        for (int c = start; c <= finish; c++) {
-            int resOdd = c % 3;
-            System.out.println(c + resOdd); // out all numbers %2
+            System.out.println(b % 2); // out all numbers %2
         }
     }
 }
