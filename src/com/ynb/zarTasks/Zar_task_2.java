@@ -11,18 +11,23 @@ package com.ynb.zarTasks;
  * 6!=720
  * 7!=5040
  * fact(m) = n * n-1 * n-2 * n-3....
+ * fact(5) = 5 * 4 * 3 * 2 * 1
+ * fact(5) = 1 * 2 * 3 * 4 * 5
+ * <p>
+ * <p>
+ * for (int i = fact-1; i > 0; i--) { i = i - 1    i *= 2    i = i * 2
+ * 001         3    2
+ * int res = fact * i; = 6
  */
 
 public class Zar_task_2 {
     public static void main(String[] args) {
         int fact = 7;
-        for (int i = fact; i > 0; i--) {
-            int multi = (fact * fact - i);
-            int res = fact  * multi;
-            System.out.println(res);
 
-
+        for (int i = fact - 1; i > 0; i--) {
+            fact = fact * i;
         }
+        System.out.println(fact);
     }
 }
 
