@@ -7,11 +7,12 @@ package com.ynb.zarTasks;
 
 public class Zar_task_4 {
     public static void main(String[] args) {
-        int start = -1;
-        int finish = 2;
+        int start = -5;
+        int finish = 5;
 
         for (int c = start; c <= finish; c++) {
-            System.out.println(c % 3); // out all numbers %3
+            if (c % 2 != 0)
+                System.out.println(c); // out all numbers  odd  Numbers
         }
     }
 }

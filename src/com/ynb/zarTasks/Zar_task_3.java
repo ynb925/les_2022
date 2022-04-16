@@ -9,16 +9,22 @@ package com.ynb.zarTasks;
 
 public class Zar_task_3 {
     public static void main(String[] args) {
-        int start = -1;
-        int finish = 2;
+        int start = -3;
+        int finish = 3;
 
         for (int i = start; i <= finish; i++) {
-            System.out.println(i); // out all numbers from start tp finish
+            System.out.println(i); // out all numbers from Start to Finish
         }
         System.out.println();
         for (int b = start; b <= finish; b++) {
-
-            System.out.println(b % 2); // out all numbers %2
+            if (b % 2 == 0 && b != 0) {
+                System.out.println(b + " even Numbers"); // out all numbers  even Numbers
+            }
+        }
+        System.out.println();
+        for (int c = start; c <= finish; c++) {
+            if (c % 2 != 0)
+                System.out.println(c + " odd Numbers"); // out all numbers  odd  Numbers
         }
     }
 }
