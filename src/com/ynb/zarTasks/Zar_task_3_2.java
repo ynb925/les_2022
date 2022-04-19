@@ -11,10 +11,12 @@ import java.util.Scanner;
 public class Zar_task_3_2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        double inch = 2.54;
+
         System.out.print("Введите число в 'сантиметрах' ");
-        if (scanner.hasNextInt()) {
-            int value = scanner.nextInt();
-            float inchPrint = (float) (value * 2.54);
+        if (scanner.hasNextDouble()) {
+            double value = scanner.nextDouble();
+            double inchPrint = value * inch;
             System.out.println(inchPrint + " дюйм");
         } else {
             System.out.println("Не тот тип данных, введите число!");
@@ -22,4 +24,3 @@ public class Zar_task_3_2 {
         scanner.close();
     }
 }
-
