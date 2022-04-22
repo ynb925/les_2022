@@ -1,7 +1,6 @@
 package com.ynb.zarTasks;
 
 import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Задание 4.7 Напишите класс, который принимает с клавиатуры целое положитель ное двузначное число.
@@ -26,7 +25,7 @@ public class Zar_task_4_7 {
         }
         System.out.println(c + "  " + b);                    // out result is convert  STR to char and add "_"  \ also make revers by numbers
         String s = Character.toString(c) + (b);              // char to string and make concatenation   |  ex: 3 7 => 37
-        Integer res = Integer.valueOf(s);                    //  string to int without damage value     |  ex: 3+7 !=10  we make 37 !!!
+        int res = Integer.parseInt(s);                    //  string to int without damage value     |  ex: 3+7 !=10  we make 37 !!!
 
         System.out.println(res + 8);
     }
