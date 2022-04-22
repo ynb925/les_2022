@@ -21,8 +21,8 @@ public class Zar_task_4_1 {
         for (int i = 0; i < str.length(); i++) {
             c = str.charAt(0);
             b = str.charAt(1);
-            System.out.println(c + "  " + b);   // out result is convert  STR to char and add "_"
         }
+        System.out.println(c + "  " + b);   // out result is convert  STR to char and add "_"
     }
 }
 
