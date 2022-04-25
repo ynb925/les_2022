@@ -15,15 +15,12 @@ public class Zar_task_4_3 {
         System.out.println("Введите 2х-ное число: ");
         int n = scanner.nextInt();
         String str = Integer.toString(n);
-        char c = 0;
-        char b = 0;
 
         System.out.println("int to str:  " + str); // out result is convert INT to STR
 
-        for (int i = 0; i < str.length(); i++) {
-            c = str.charAt(1);
-            b = str.charAt(0);
-        }
+        char c = str.charAt(1);
+        char b = str.charAt(0);
+
         System.out.println(c + "  " + b);   // out result is convert  STR to char and add "_"  \ also make revers by numbers
     }
 }
