@@ -8,6 +8,5 @@ package com.ynb.zarTasks;
 
 public class Zar_task_9_35 {
     public static void main(String[] args) {
-
     }
 }
