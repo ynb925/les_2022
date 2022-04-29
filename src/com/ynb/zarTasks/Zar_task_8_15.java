@@ -17,10 +17,10 @@ public class Zar_task_8_15 {
         int a = n / 10;
         int b = n % 10;
 
-        if (n > 0 && a != b) {
-            System.out.println(" разные числа ");
+        if (a > b) {
+            System.out.println(" 1я цифра больше ");
         } else {
-
+            System.out.println(" 2я цифра больше ");
         }
     }
 }
