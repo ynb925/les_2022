@@ -1,5 +1,7 @@
 package com.ynb.zarTasks;
 
+import java.util.Scanner;
+
 /**
  * Задание 9.7 (отличная задача на все знание про if)
  * //
@@ -18,6 +20,21 @@ package com.ynb.zarTasks;
 
 public class Zar_task_9_7 {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите 1й угол треугольника :  ");
+        int n1 = scanner.nextInt();
+        System.out.println("Введите 2й угол треугольника :  ");
+        int n2 = scanner.nextInt();
+
+        //  #1 остроугольный :
+        //  1) разносторонний а<90 b<90 c<90 ; 2) равнобедренный а<45 b<90 c<45 ; 3) равносторонний а<60 b<60 c<60 ;
+
+        //  #2 тупоугольные :
+        //  1) разносторонний а<35 b<110 c<35 ; 2) равнобедренный а<35 b<110 c<35 ;
+
+        //  #3 прямоугольные :
+        //  1) разносторонний а<35 b<55 c<90 ; 2) равнобедренный а<45 b<45 c<90 ;
+
 
     }
 }
