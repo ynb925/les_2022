@@ -19,7 +19,9 @@ public class Zar_task_9_35 {
         // A - 65 , Z - 90 ;    a - 97 , z - 122.
         if (n >= 65 && n <= 90 || n >= 97 && n <= 122) {
 
-            System.out.println("is a latinium alfavit");
+            System.out.println(" is a latinium alfavit ");
+        } else {
+            System.out.println(" NOT a latinium alfavit ");
         }
     }
 }
