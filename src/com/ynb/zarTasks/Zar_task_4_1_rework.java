@@ -11,7 +11,7 @@ public class Zar_task_4_1_rework {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите 2х-ное число: ");
+        System.out.println("введите 2х значное число");
         int n = scanner.nextInt();
 
         int a = n / 10;   // we get 1st num
