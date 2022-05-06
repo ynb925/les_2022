@@ -13,11 +13,12 @@ public class Zar_task_10_4 {
         int n = scanner.nextInt();
 
         int min = 10;
-        int max = n;
-        int range = max - min + 1;
+        int range = n - min + 1;
+
         int randomNumber = (int) (Math.random() * range) + min;
         int randomNumber1 = (int) (Math.random() * range) + min;
         int randomNumber2 = (int) (Math.random() * range) + min;
+
         System.out.println(randomNumber);
         System.out.println(randomNumber1);
         System.out.println(randomNumber2);
