@@ -19,12 +19,12 @@ public class Zar_task_11_14 {
         System.out.println(" enter num 2nd : ");
         int n2 = scanner.nextInt();
 
-        System.out.print("start");
+        if (n1 > 0 && n2 > 0)
 
+            System.out.print("start");
         for (int i = n1; i < n2; i++) {
-            if (n1 > 0 && n2 > 0) {
-                System.out.print(" " + i + " ");
-            }
+            System.out.print(" " + i + " ");
+
         }
         System.out.print("finish");
     }
