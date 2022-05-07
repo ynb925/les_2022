@@ -14,10 +14,9 @@ public class Zar_task_11_17 {
         System.out.println(" enter 3th num : ");
         int n = scanner.nextInt();
 
-        if (n / 100 == 1) {
-        }
         for (int i = 107; i <= n; i = i + 10) {
             System.out.print(i + " ");
         }
     }
 }
+

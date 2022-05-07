@@ -15,11 +15,9 @@ public class Zar_task_11_16_1 {
         System.out.println(" enter num 1st : ");
         int n = scanner.nextInt();
 
-
         for (int i = 0; i <= n; i++) {
 
             if (i % 4 == 0) {
-
                 System.out.print(i + "#");
             } else {
                 System.out.print(" " + i + " ");
