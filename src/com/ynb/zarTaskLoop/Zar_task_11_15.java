@@ -16,13 +16,12 @@ public class Zar_task_11_15 {
         System.out.println(" enter num 1st : ");
         int n = scanner.nextInt();
 
-        if (n > 0 && n % 2 == 0)
+        System.out.print("start");
 
-            System.out.print("start");
-        for (int i = 0; i <= n; i++) {
+        for (int i = 0; i < n + 1; i = i + 2) {
             System.out.print(" " + i + " ");
-
         }
         System.out.print("finish");
     }
 }
+
