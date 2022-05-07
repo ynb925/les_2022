@@ -19,9 +19,10 @@ public class Zar_task_11_23 {
         System.out.println(" enter  num : ");
         int n = scanner.nextInt();
 
-
-        for (int i = 0; i < n; i++) {
-            int res = 7 + 4 * i;
+        int res = 7;
+        System.out.print(res + " ");
+        for (int i = 1; i < n; i++) {
+            res = res + 4;
             System.out.print(res + " ");
         }
     }

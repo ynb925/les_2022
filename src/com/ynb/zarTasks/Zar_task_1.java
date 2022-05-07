@@ -1,11 +1,13 @@
 package com.ynb.zarTasks;
 
+import java.util.Scanner;
+
 /**
  * Задача1. Напиши программу которая высчитывает положительные числа Фибоначчи
  * (не сложно, погугли что такое числа Фибоначчи). Используй любой удобный цыкл.
  * Например я указываю 6е число Фибоначчи, на экран должно вывести 8.
  * PS используй инт, мы не будем высчитывать 100е число Фибоначчи.
- *
+ * <p>
  * f0 = 0 + 0 = 0
  * f1= 0 + 1 = 1
  * f2= 0 + 1 = 1
@@ -17,15 +19,25 @@ package com.ynb.zarTasks;
  * f8= 8 + 13 = 21
  * f9= 13 + 21 = 34
  * f10= 21 + 34 = 55
- *
  */
 public class Zar_task_1 {
     public static void main(String[] args) {
-        int num = 6;
-        for (int i = num - 1; i < num; i++) {
-            int fib = i + i;
-            num = fib + i;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println(" enter  num : ");
+        int n = scanner.nextInt();
+
+        int bef = 0;
+        int cur = 1;
+        int tem = 0;
+
+        System.out.print(bef + " ");
+        for (int i = 0; i < n; i++) {
+            tem = i;
+            cur = cur + tem;
+
+            System.out.print(cur + " ");
         }
-        System.out.println(num);
     }
 }
+
