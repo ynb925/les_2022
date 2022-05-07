@@ -13,7 +13,6 @@ import java.util.Scanner;
 public class Zar_task_11_23 {
 
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
         System.out.println(" enter  num : ");
