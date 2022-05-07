@@ -8,18 +8,20 @@ public class test_pices {
         System.out.println(" enter num :  ");
         int n = scanner.nextInt();
 
-        int a = n % 10;
+        int a = n % 80;
         int b = n % 100;
         int c = n % 1000;
         int d = n / 10;
         int f = n / 100;
         int h = n / 1000;
+
         System.out.println(a + " " + n);
         System.out.println(b + " " + n);
         System.out.println(c + " " + n);
         System.out.println(d + " " + n);
         System.out.println(f + " " + n);
         System.out.println(h + " " + n);
+
 
     }
 }
