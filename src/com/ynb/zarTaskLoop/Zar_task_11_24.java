@@ -16,5 +16,10 @@ public class Zar_task_11_24 {
 
         System.out.println(" enter  num : ");
         int n = scanner.nextInt();
+
+        for (int i = 0; i >= n-n *3; i = i - 8) {
+
+            System.out.print(i + " ");
+        }
     }
 }
