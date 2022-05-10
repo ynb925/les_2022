@@ -23,9 +23,9 @@ public class Zar_task_12_2 {
             number = scanner.nextInt();
 
             if (number % 2 == 0) {
-                counter_even = counter_even + 1;
+                counter_even++;
             } else {
-                counter_odd = counter_odd + 1;
+                counter_odd++;
             }
         }
         System.out.print(counter_even + "   " + "even %2");
