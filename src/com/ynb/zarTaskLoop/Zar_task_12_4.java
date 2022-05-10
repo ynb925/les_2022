@@ -13,22 +13,20 @@ public class Zar_task_12_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" how match we do: ");
-        int quantity = scanner.nextInt();
-
         int number = scanner.nextInt();
-        int newNumm = number;
 
-        int counterMax = 0;
+        int newNumm = 0;
+        int count = 0;
 
-        for (int i = 0; i < quantity; i++) {
+        for (int i = 0; i < number; i++) {
             System.out.println(i + 1 + " enter num :  ");
-            number = scanner.nextInt();
+            int number1 = scanner.nextInt();
 
-            if (number < newNumm || number > newNumm) {
-                counterMax = counterMax + 1;
+            if (number1 > newNumm) {
+                count++;
+                newNumm = number1;
             }
         }
-        System.out.print("     ");
-        System.out.print(counterMax + "   " + "max");
+        System.out.println(count + "   " + "times num was max");
     }
 }
