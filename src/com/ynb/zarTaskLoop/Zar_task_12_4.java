@@ -8,28 +8,12 @@ import java.util.Scanner;
  * ПС если хочешь не вводить вручную, есть лайфхаки,
  */
 
-public class Zar_task_12_2 {
+
+public class Zar_task_12_4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" how match we do: ");
         int quantity = scanner.nextInt();
 
-        int number;
-        int counter_odd = 0;
-        int counter_even = 0;
-
-        for (int i = 0; i < quantity; i++) {
-            System.out.println(i + 1 + " enter num :  ");
-            number = scanner.nextInt();
-
-            if (number % 2 == 0) {
-                counter_odd = counter_odd + 1;
-            } else {
-                counter_even = counter_even + 1;
-            }
-        }
-        System.out.print(counter_odd + "   " + "odd %2");
-        System.out.print("     ");
-        System.out.print(counter_even + "   " + "even not %2");
     }
 }
