@@ -15,21 +15,21 @@ public class Zar_task_12_2 {
         int quantity = scanner.nextInt();
 
         int number;
-        int counter_even = 0;
-        int counter_odd = 0;
+        int counterEven = 0;
+        int counterOdd = 0;
 
         for (int i = 0; i < quantity; i++) {
             System.out.println(i + 1 + " enter num :  ");
             number = scanner.nextInt();
 
             if (number % 2 == 0) {
-                counter_even++;
+                counterEven++;
             } else {
-                counter_odd++;
+                counterOdd++;
             }
         }
-        System.out.print(counter_even + "   " + "even %2");
+        System.out.print(counterEven + "   " + "even %2");
         System.out.print("     ");
-        System.out.print(counter_odd + "   " + "odd not %2");
+        System.out.print(counterOdd + "   " + "odd not %2");
     }
 }
