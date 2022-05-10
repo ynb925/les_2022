@@ -27,17 +27,18 @@ public class Zar_task_1 {
         System.out.println(" enter  num : ");
         int n = scanner.nextInt();
 
-        int f1 = 1;
+        int f1 = 0;
         int f2 = 1;
-        int f3 = 0;
+        int temp = 0;
 
+/*
 
         for (int i = 0; i <= n; i++) {
             f3 = f1 + f2;
 
             System.out.print(f3 + " ");
+*/
 
-        }
+//        }
     }
 }
-

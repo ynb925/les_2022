@@ -23,7 +23,7 @@ public class Zar_task_12_1 {
             System.out.println(i + 1 + " enter num :  ");
             number = scanner.nextInt();
 
-            if (number > 0) {
+            if (number >= 0) {
                 counter = counter + 1;
             }
         }
