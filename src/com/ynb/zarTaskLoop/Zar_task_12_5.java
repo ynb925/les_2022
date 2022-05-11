@@ -25,6 +25,7 @@ public class Zar_task_12_5 {
         int counterPozNum = 0;
         int counterEvenNum = 0;
         int counterOneNum = 0;
+        int counterOutNum = 0;
         int number1;
         int tempNum = 0;
 
@@ -33,19 +34,21 @@ public class Zar_task_12_5 {
             System.out.println(i + 1 + " enter num :  ");
             number1 = scanner.nextInt();
 
-            if (number1 >= 0) {
+            if (number1 >= 0 && 0 <= numberRmax) {
                 counterPozNum++;
             }
-            if (number1 % 2 == 0) {
+            if (number1 % 2 == 0 && numberRmin < number1 && number1 < numberRmax) {
                 counterEvenNum++;
             }
             if (number1 > -10 && 10 > number1) {
                 counterOneNum++;
-
+            } else {
+                counterOutNum++;
             }
         }
         System.out.println(counterPozNum + "   " + "num is pozitiv");
         System.out.println(counterEvenNum + "   " + "num is even %2");
         System.out.println(counterOneNum + "   " + "num is equivalent");
+        System.out.println(counterOutNum + "   " + "num is out rules");
     }
 }
