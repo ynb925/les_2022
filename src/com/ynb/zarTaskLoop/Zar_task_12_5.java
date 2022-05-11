@@ -27,7 +27,6 @@ public class Zar_task_12_5 {
         int counterOneNum = 0;
         int counterOutNum = 0;
         int number1;
-        int tempNum = 0;
 
         for (int i = 0; i < counter; i++) {
 
