@@ -15,9 +15,9 @@ public class Zar_task_12_5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" enter range nums start: ");
-        int numberRmin = scanner.nextInt();
+        int numberMin = scanner.nextInt();
         System.out.println(" enter range nums finish: ");
-        int numberRmax = scanner.nextInt();
+        int numberMax = scanner.nextInt();
 
         System.out.println(" how match we do: ");
         int counter = scanner.nextInt();
@@ -26,20 +26,20 @@ public class Zar_task_12_5 {
         int counterEvenNum = 0;
         int counterOneNum = 0;
         int counterOutNum = 0;
-        int number1;
+        int number;
 
         for (int i = 0; i < counter; i++) {
 
             System.out.println(i + 1 + " enter num :  ");
-            number1 = scanner.nextInt();
+            number = scanner.nextInt();
 
-            if (number1 >= 0 && 0 <= numberRmax) {
+            if (number >= 0 && 0 <= numberMax) {
                 counterPozNum++;
             }
-            if (number1 % 2 == 0 && numberRmin < number1 && number1 < numberRmax) {
+            if (number % 2 == 0 && numberMin < number && number < numberMax) {
                 counterEvenNum++;
             }
-            if (number1 > -10 && 10 > number1) {
+            if (number > -10 && 10 > number) {
                 counterOneNum++;
             } else {
                 counterOutNum++;
