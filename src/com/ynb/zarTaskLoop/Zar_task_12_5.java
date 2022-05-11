@@ -20,30 +20,32 @@ public class Zar_task_12_5 {
         int numberRmax = scanner.nextInt();
 
         System.out.println(" how match we do: ");
-        int number = scanner.nextInt();
+        int counter = scanner.nextInt();
 
-        int counterEven = 0;
-        int counterOdd = 0;
-        int newNumm = 0;
-        int count = 0;
-        int temp = 0;
+        int counterPozNum = 0;
+        int counterEvenNum = 0;
+        int counterOneNum = 0;
+        int number1;
+        int tempNum = 0;
 
-        for (int i = 0; i < number; i++) {
-            System.out.println(temp + 1 + " enter num :  ");
-            temp++;
-            int number1 = scanner.nextInt();
+        for (int i = 0; i < counter; i++) {
 
-            if (number1 > newNumm && number1 >= numberRmin && number1 <= numberRmax) {
-                count++;
-                newNumm = number1;
-            } else if (number1 % 2 == 0 && number1 >= numberRmin && number1 <= numberRmax) {
-                counterEven++;
-            } else if (number1 % 2 != 0 && number1 >= numberRmin && number1 <= numberRmax) {
-                counterOdd++;
+            System.out.println(i + 1 + " enter num :  ");
+            number1 = scanner.nextInt();
+
+            if (number1 >= 0) {
+                counterPozNum++;
+            }
+            if (number1 % 2 == 0) {
+                counterEvenNum++;
+            }
+            if (number1 > -10 && 10 > number1) {
+                counterOneNum++;
+
             }
         }
-        System.out.println(count + "   " + "times num was max");
-        System.out.println(counterEven + "   " + "even %2");
-        System.out.println(counterOdd + "   " + "odd not %2");
+        System.out.println(counterPozNum + "   " + "num is pozitiv");
+        System.out.println(counterEvenNum + "   " + "num is even %2");
+        System.out.println(counterOneNum + "   " + "num is equivalent");
     }
 }
