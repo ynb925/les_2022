@@ -13,7 +13,7 @@ public class Zar_task_1_swap {
 
         int num1 = scanner.nextInt(); // 4
         int num2 = scanner.nextInt(); // 10
-        int temp = 0;
+        int temp;
 
 
         temp = num1; // 0 <= 4
