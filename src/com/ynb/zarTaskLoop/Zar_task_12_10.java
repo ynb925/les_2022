@@ -12,20 +12,17 @@ import java.util.Scanner;
 public class Zar_task_12_10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("enter num best students: ");
+        System.out.println("enter num q-ty students: ");
         int numStudents = scanner.nextInt();
 
-        int countQuality = 0;
-
+        double countQuality = 0;
 
         for (int i = 0; i < numStudents; i++) {
             System.out.println(i + 1 + " enter num Student Quality :  ");
             int numStudentQuality = scanner.nextInt();
-
-            if (numStudentQuality > 0) {
-                countQuality++;
-            }
+            countQuality = countQuality + numStudentQuality;
         }
-        System.out.println(countQuality / numStudents + "   " + "more half students is fail");
+        if (countQuality / numStudents < 4)
+            System.out.println("more half students is fail");
     }
 }
