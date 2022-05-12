@@ -33,16 +33,19 @@ public class Zar_task_12_5 {
             System.out.println(i + 1 + " enter num :  ");
             number = scanner.nextInt();
 
-            if (number >= 0 && 0 <= numberMax) {
+            if (number < numberMin || number > numberMax) {
+                counterOutNum++;
+                continue;
+            }
+
+            if (number >= 0) {
                 counterPozNum++;
             }
-            if (number % 2 == 0 && numberMin < number && number < numberMax) {
+            if (number % 2 == 0) {
                 counterEvenNum++;
             }
             if (number > -10 && 10 > number) {
                 counterOneNum++;
-            } else {
-                counterOutNum++;
             }
         }
         System.out.println(counterPozNum + "   " + "num is pozitiv");
