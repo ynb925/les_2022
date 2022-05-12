@@ -8,7 +8,7 @@ import java.util.Scanner;
  * Числа должны отделяться друг от друга знаком «пробел». Перед началом и после окончания вывода серии чисел на экран
  * вывода следует вывести текстовые сообщения (по выбору).
  */
-import java.util.Scanner;
+
 
 public class Zar_task_11_24 {
     public static void main(String[] args) {
