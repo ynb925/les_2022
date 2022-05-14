@@ -17,8 +17,7 @@ public class Zar_task_15_9_w {
         int multiNum = scanNum * scanNum;
 
         while (resNums < multiNum) {
-            int nextNum = scanner.nextInt();
-            resNums = resNums + nextNum;
+            resNums = resNums + scanner.nextInt();
 
             System.out.println(" " + resNums);
         }
