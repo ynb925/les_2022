@@ -14,12 +14,11 @@ public class Zar_task_15_10_w {
         System.out.println(" enter Num: ");
         int scanNum = scanner.nextInt();
         int xNum = scanNum;
-        int scanRes = 0;
 
-
-        while (scanRes > 0) {
-            scanRes = xNum - scanner.nextInt();
+        while (xNum > 0) {
+            xNum = xNum - scanner.nextInt();
+            System.out.println(xNum);
         }
-        System.out.println(scanRes);
+        System.out.println(" finish ");
     }
 }
