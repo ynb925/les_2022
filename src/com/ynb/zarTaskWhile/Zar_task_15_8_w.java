@@ -19,6 +19,6 @@ public class Zar_task_15_8_w {
             resNums = resNums + scanNum;
             countNums++;
         }
-        System.out.println(countNums + " " + "nums " + " " + resNums);
+        System.out.println(countNums + " " + " nums " + " " + resNums);
     }
 }
