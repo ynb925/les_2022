@@ -12,16 +12,16 @@ public class Zar_task_15_9_w {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" enter Num: ");
-        int scanNum;
+        int scanNum = scanner.nextInt();
         int resNums = 0;
-        int countNums = 0;
-        while (resNums < 151) {
+        int multiNum = scanNum * scanNum;
 
-            scanNum = scanner.nextInt();
-            resNums = resNums + scanNum;
+        while (resNums < multiNum) {
+            int nextNum = scanner.nextInt();
+            resNums = resNums + nextNum;
 
-            countNums++;
+            System.out.println(" " + resNums);
         }
-        System.out.println(countNums + " " + " nums " + " " + resNums);
+        System.out.println("finish");
     }
 }
