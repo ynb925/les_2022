@@ -12,9 +12,16 @@ import java.util.Scanner;
 public class Zar_task_15_7_w {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println(" count of enter nums: ");
-        int n = scanner.nextInt();
+        System.out.println(" enter Num: ");
+        int scanNum;
 
-
+        while (true) {
+            scanNum = scanner.nextInt();
+            if (scanNum == 123) {
+                System.out.println(" code is enter ");
+            } else {
+                System.out.println(" code is wrong ");
+            }
+        }
     }
 }
