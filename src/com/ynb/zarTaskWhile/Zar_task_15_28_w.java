@@ -16,11 +16,11 @@ public class Zar_task_15_28_w {
         int inputNum = scanner.nextInt();
 
         int division = 1;
-        int sum = 0;
+        int res = 0;
         int countNums = 0;
         while (inputNum / division != 0) {             // (inpun != 0)
 
-            sum = sum + (inputNum / division) % 10;    // sum += inputNum % 10;
+            res = (inputNum / division) % 10;    // res  = inputNum % 10;
             division = division * 10;                  // inputNum /= 10;
 
             countNums++;
