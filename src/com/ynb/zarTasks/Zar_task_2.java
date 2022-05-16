@@ -18,7 +18,7 @@ package com.ynb.zarTasks;
 
 public class Zar_task_2 {
     public static void main(String[] args) {
-        int fact = 7;
+        int fact = 3;
 
         for (int i = fact - 1; i > 0; i--) {
             fact = fact * i;

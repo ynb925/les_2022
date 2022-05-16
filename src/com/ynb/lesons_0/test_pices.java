@@ -8,23 +8,18 @@ public class test_pices {
         System.out.println(" enter num :  ");
         int n = scanner.nextInt();
 
-        int a = n % 10;
-        int d = n / 10;
-        int b = n % 100;
-        int c = n % 1000;
-        int i = n / 10;
-        int f = n / 100;
-        int h = n / 1000;
+        int res1 = (n % 10);
+        int res2 = (n / 10)  ;
+        int res3 = (n / 100) % 10;
+        int res4 = (n / 1000) % 10;
+        int res5 = (n / 10000) % 10;
 
+        System.out.println(res1 + " this is sum" + "res1");
+        System.out.println(res2 + " this is sum" + "res2");
+        System.out.println(res3 + " this is sum" + "res3");
+        System.out.println(res4 + " this is sum" + "res4");
+        System.out.println(res5 + " this is sum" + "res5");
 
-        System.out.println(a + " " + n + "a");
-        System.out.println(a + " " + n + "b");
-        System.out.println(b + " " + n);
-        System.out.println(c + " " + n);
-        System.out.println(i + " " + n);
-        System.out.println(d + " " + n);
-        System.out.println(f + " " + n);
-        System.out.println(h + " " + n);
 
     }
 }
