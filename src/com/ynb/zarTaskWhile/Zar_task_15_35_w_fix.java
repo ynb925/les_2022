@@ -13,23 +13,17 @@ public class Zar_task_15_35_w_fix {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" count of enter nums: ");
         int scanNum = scanner.nextInt();
-        String str = Integer.toString(scanNum);
-        String numm = str;
-        int division = 3;
         int res = 0;
-        int count = 0;
-        String s = "";
+        int tem;
+        int div = 10;
 
-        while (scanNum > 0) {
+        while (scanNum / div != 0) {
+            tem = (scanNum / div) % 10;
 
-
-            res = (Integer.parseInt(str) / division) % 10;
-            char symbol = str.charAt(division);
-            s = s + (Character.toString(symbol));
-            res = Integer.parseInt(s);
-            System.out.print(res);
-
+            res = res * 10 + tem;
+            div = div * 10;
         }
+        System.out.println(res);
     }
 }
 

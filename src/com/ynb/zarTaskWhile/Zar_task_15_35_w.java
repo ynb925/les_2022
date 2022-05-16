@@ -25,7 +25,7 @@ public class Zar_task_15_35_w {
             numm = (scanNum / division) % 10;
             division = division * 10;
             if (numm == 0) {
-                System.out.print("");        // check num before print if last symbol in numm was 0
+                System.out.print("");    // check num before print if last symbol in numm was 0
             } else {
                 System.out.print(numm);
             }

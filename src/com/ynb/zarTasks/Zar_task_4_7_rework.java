@@ -20,6 +20,6 @@ public class Zar_task_4_7_rework {
 
         int res = (a * 10) + b;
 
-        System.out.println(res);
+        System.out.print(res);
     }
 }
