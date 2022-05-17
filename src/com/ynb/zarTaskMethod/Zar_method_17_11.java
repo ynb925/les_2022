@@ -14,8 +14,7 @@ public class Zar_method_17_11 {
         System.out.println(" put in  num : ");
         int value = scanner.nextInt();
 
-        int res = checkSymbols(value);
-        System.out.println(res);
+        System.out.println(checkSymbols(value));
     }
 
     public static int checkSymbols(int value) {
