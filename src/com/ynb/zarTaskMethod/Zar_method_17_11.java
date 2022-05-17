@@ -1,4 +1,4 @@
-package com.ynb.ZarTaskMethod;
+package com.ynb.zarTaskMethod;
 
 import java.util.Scanner;
 
