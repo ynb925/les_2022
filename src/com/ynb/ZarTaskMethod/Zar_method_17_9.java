@@ -17,18 +17,34 @@ public class Zar_method_17_9 {
         System.out.println(" put in 2nd num : ");
         int finish = scanner.nextInt();
 
-        System.out.println(checkNumEven(start,finish));
-
-
+        checkNumEven(start, finish);
     }
 
-    public static int checkNumEven(int start, int finish) {
-
-        int i;
-        i = start;
-        while (start <= finish) {
-            i++;
+    public static void checkNumEven(int start, int finish) {
+        if (start % 2 != 0) {
+            start = start + 1;
         }
-        return i;
+        while (start <= finish) {
+            start += 2;
+            System.out.print(start + " ");
+        }
     }
 }
+
+
+//    public static void checkNumEven(int start, int finish) {
+//        if (start % 2 != 0) {
+//            start = start + 1;
+//            cycleNumCalc(start, finish);
+//        } else {
+//            cycleNumCalc(start, finish);
+//        }
+//    }
+//
+//    public static void cycleNumCalc(int start, int finish) {
+//        while (start <= finish) {
+//            start += 2;
+//            System.out.print(start + " ");
+//        }
+//    }
+//   }
