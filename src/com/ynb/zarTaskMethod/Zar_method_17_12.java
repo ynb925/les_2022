@@ -11,22 +11,23 @@ public class Zar_method_17_12 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println(" put in  num : ");
+        System.out.println(" wrt your num : ");
         int value = scanner.nextInt();
 
+        System.out.println(getMaxNum(value));
     }
 
     public static int getMaxNum(int value) {
         int div = 1;
         int getMax = 0;
-        int tem;
+        int temp;
 
         while (value / div != 0) {
-            tem = (value / div) % 10;
+            temp = (value / div) % 10;
             div = div * 10;
-            getMax = tem;
-            if (getMax > tem) {
-                tem = getMax;
+
+            if (getMax < temp) {
+                getMax = temp;
             }
         }
         return getMax;
