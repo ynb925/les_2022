@@ -14,21 +14,21 @@ public class Zar_method_17_11 {
         System.out.println(" put in  num : ");
         int value = scanner.nextInt();
 
-        int div = 1;
-        int summa = 0;
-        int countNums = 0;
-
-        checkSymbols(value, div, summa, countNums);
+        int res = checkSymbols(value);
+        System.out.println(res);
     }
 
-    public static void checkSymbols(int value, int div, int summa, int countNums) {
-        while (value / div != 0) {
+    public static int checkSymbols(int value) {
+        int countNums = 0;
+        int div = 1;
+        int sum;
 
-            summa = (value / div) % 10;
+        while (value / div != 0) {
+            sum = (value / div) % 10;
             div = div * 10;
 
             countNums++;
         }
-        System.out.println(countNums);
+        return countNums;
     }
 }
