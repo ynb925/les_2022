@@ -37,7 +37,6 @@ public class Zar_task_12_5 {
                 counterOutNum++;
                 continue;
             }
-
             if (number >= 0) {
                 counterPozNum++;
             }
