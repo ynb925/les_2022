@@ -21,12 +21,9 @@ public class Zar_method_17_11 {
     public static int checkSymbols(int value) {
         int countNums = 0;
         int div = 1;
-        int sum;
 
         while (value / div != 0) {
-            sum = (value / div) % 10;
             div = div * 10;
-
             countNums++;
         }
         return countNums;
