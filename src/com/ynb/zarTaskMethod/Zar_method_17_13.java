@@ -18,40 +18,34 @@ public class Zar_method_17_13 {
         int scan2nd = scanner.nextInt();
 
         System.out.println(getTrue(scan1st, scan2nd));
-
     }
 
-    public static int checkNum1(int scan1st) {
+    public static int checkNums(int numbers) {
+      /*  int counter = 0;
+       for (int div = 1; numbers / div != 0; counter++, div *= 10) { }
+        return counter;*/
         int div = 1;
-        int value1 = 0;
+        int counter = 0;
 
-        while (scan1st / div != 0) {
+        while (numbers / div != 0) {
             div = div * 10;
-            value1++;
+            counter++;
         }
-        return value1;
-    }
-
-    public static int checkNum2(int scan2nd) {
-        int div = 1;
-        int value2 = 0;
-
-        while (scan2nd / div != 0) {
-            div = div * 10;
-            value2++;
-        }
-        return value2;
+        return counter;
     }
 
     public static boolean getTrue(int value1, int value2) {
-        if (value1 > value2) {
-            return false;
-        }
-        if (value1 < value2) {
-            return false;
 
-        } else {
-            return true;
-        }
+        int counter1 = checkNums(value1);
+        int counter2 = checkNums(value2);
+
+        return counter1 == counter2;
     }
 }
+
+
+  /*if (counter1 != counter2) {
+            return false;
+        }else {
+            return true;
+        }*/
