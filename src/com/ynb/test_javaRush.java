@@ -5,7 +5,16 @@ import java.util.Scanner;
 public class test_javaRush {
     public static void main(String[] args) {
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(" wrt length of array ");
+        int num = scanner.nextInt();
+        int[] num2 = new int[5];
 
+        System.out.println(" in nums for array ");
+        for (int i = 0; i < num; i++) {
+
+            System.out.println(num2[i]);
+        }
     }
 }
 
