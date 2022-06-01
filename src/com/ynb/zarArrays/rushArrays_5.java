@@ -14,8 +14,13 @@ public class rushArrays_5 {
     }
 
     private static void extracted(int[] arr1) {
-        Arrays.sort(arr1);
+        for (int value : arr1) {
+            System.out.print(value + "  ");
+        }
+        System.out.println();
+        System.out.println();
 
+        Arrays.sort(arr1);
         System.out.println(Arrays.toString(arr1));
     }
 
