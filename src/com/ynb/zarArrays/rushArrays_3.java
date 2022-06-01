@@ -1,10 +1,7 @@
 package com.ynb.zarArrays;
 
-
-import java.util.Arrays;
-
 /**
- * сравнить длину двух массивов
+ * сравнить сумму чисел внутри массивов и написать в каком массиве больше.
  */
 public class rushArrays_3 {
     public static void main(String[] args) {
@@ -15,9 +12,7 @@ public class rushArrays_3 {
         System.out.println(checkLengthArr(arr1, arr2));
     }
 
-
     public static boolean checkLengthArr(int[] arr1, int[] arr2) {
-
-        return Arrays.equals(arr1, arr2);
+        return arr1.length == arr2.length;
     }
 }
