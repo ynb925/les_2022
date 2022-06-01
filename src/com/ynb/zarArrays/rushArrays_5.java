@@ -13,7 +13,14 @@ public class rushArrays_5 {
         extracted(arr1);
     }
 
+    private static void printarray(int[] arr1) {
+
+        System.out.println(Arrays.stream(arr1).min());
+        System.out.println(Arrays.stream(arr1).max());
+    }
+
     private static void extracted(int[] arr1) {
+        System.out.println();
         for (int value : arr1) {
             System.out.print(value + "  ");
         }
@@ -22,11 +29,5 @@ public class rushArrays_5 {
 
         Arrays.sort(arr1);
         System.out.println(Arrays.toString(arr1));
-    }
-
-    private static void printarray(int[] arr1) {
-
-        System.out.println(Arrays.stream(arr1).min());
-        System.out.println(Arrays.stream(arr1).max());
     }
 }
