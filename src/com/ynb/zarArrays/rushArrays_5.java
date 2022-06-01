@@ -9,6 +9,7 @@ public class rushArrays_5 {
     public static void main(String[] args) {
 
         int[] arr1 = new int[]{1, 3, 23, 44, 66, 20, 8, 32, 45, 11};
+
         printarray(arr1);
         extracted(arr1);
     }
