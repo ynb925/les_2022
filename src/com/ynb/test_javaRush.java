@@ -8,6 +8,27 @@ public class test_javaRush {
 
     }
 }
+
+  /*
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+
+        int[] ints = new int[n];
+        for (int i = 0; i < n; i++) {
+            ints[i] = scanner.nextInt();
+        }
+
+        if (n % 2 == 0) {
+            for (int i = ints.length - 1; i >= 0; i--) {
+                System.out.println(ints[i]);
+            }
+        } else {
+            for (int i = 0; i < ints.length; i++) {
+                System.out.println(ints[i]);
+            }
+        }
+    }
+}*/
 /*        double glass = 0.5;
         //напишите тут ваш код
         Scanner scanner = new Scanner(System.in);
