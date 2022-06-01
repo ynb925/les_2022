@@ -23,7 +23,7 @@ public class rushArrays_2 {
         System.out.println("Inserted array elements:");
         for (int i = 0; i < numArr.length; i++) {
             if (numArr[i] % 2 == 0) {
-                System.out.println(i + ":" + numArr[i] + " ");   // print even nums in arr
+                System.out.println(i + "_index:" + numArr[i]);   // print even nums in arr
             }
             //  System.out.println(i + ":" + numArr[i] + " ");
         }
