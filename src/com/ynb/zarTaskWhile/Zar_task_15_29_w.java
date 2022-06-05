@@ -17,6 +17,7 @@ public class Zar_task_15_29_w {
 
         int division = 1;
         int sum = 0;
+
         while (inputNum / division != 0) {             // (inpun != 0)
 
             sum = sum + (inputNum / division) % 10;    // sum += inputNum % 10;
