@@ -3,6 +3,8 @@ package com.ynb.lesons_0;
 public class someTest {
     public static void main(String[] args) {
 
+    }
+}
 
 /*        // test while
         int b = 17;
