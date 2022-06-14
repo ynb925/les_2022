@@ -27,21 +27,3 @@ public class Arr18_12 {
     }
 }
 
-
-/*        Scanner scan = new Scanner(System.in);
-        System.out.println("size of array? ");
-
-        Random ran = new Random();
-
-        int[] array = new int[scan.nextInt()];       //        int sizeOfArray  = scan.nextInt();
-
-
-        for (int i = 0; i < array.length; i++) {
-
-            array[i] = ran.nextInt(  100,   999); // array[i] - обращение к массиву, что в него кладем!!!!!!!!!!!!!!!!!!
-            System.out.print(i + "; " + array[i] + " ");
-
-        }
-
-    }
-}*/
