@@ -20,15 +20,13 @@ public class Arr18_12 {
 
         for (int i = 0; i < numArr.length; i++) {
 
-            numArr[i] = random.nextInt(999) + 99;
-            if (numArr[i] > 999) {
-                numArr[i] = numArr[i] - 99;
-            }
-            System.out.println(i + ": " + numArr[i] + " ");
+            numArr[i] = random.nextInt(100, 999);
 
+            System.out.println(i + ": " + numArr[i] + " ");
         }
     }
 }
+
 
 /*        Scanner scan = new Scanner(System.in);
         System.out.println("size of array? ");
@@ -40,7 +38,7 @@ public class Arr18_12 {
 
         for (int i = 0; i < array.length; i++) {
 
-            array[i] = ran.nextInt(100, 999); // array[i] - обращение к массиву, что в него кладем!!!!!!!!!!!!!!!!!!
+            array[i] = ran.nextInt(  100,   999); // array[i] - обращение к массиву, что в него кладем!!!!!!!!!!!!!!!!!!
             System.out.print(i + "; " + array[i] + " ");
 
         }
