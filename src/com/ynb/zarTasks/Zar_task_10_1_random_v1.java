@@ -13,16 +13,13 @@ public class Zar_task_10_1_random_v1 {
         int max = 99;
         int range = max - min + 1;
         int randomNumber = (int) (Math.random() * range) + min;
-    }
-}
 
-/*
 
         int ranNum = (int) (Math.random() * 100);
         if (ranNum > 9 && ranNum < 100) {
             System.out.println(ranNum);
         } else
             System.out.println(ranNum + 10);
-        }
-}*/
+    }
+}
 
