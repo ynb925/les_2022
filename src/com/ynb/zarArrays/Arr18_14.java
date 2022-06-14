@@ -20,20 +20,20 @@ public class Arr18_14 {
         System.out.println(" write size of arr :");
         int[] arrSize = new int[scanner.nextInt()];
 
-        int help = 0;
+        int helpNum = 0;
         if (arrSize.length % 2 != 0) {
-            help = 1;
+            helpNum = 1;
         }
         for (int i = 0; i < arrSize.length; i++) {
             arrSize[i] = random.nextInt(100, 999);
 
         }
-        for (int f = 0; f < (arrSize.length / 2) + help; f++) {
+        for (int f = 0; f < (arrSize.length / 2) + helpNum; f++) {
             System.out.println(arrSize[f]);
         }
         System.out.println();
 
-        for (int s = (arrSize.length / 2) + help; s < arrSize.length; s++) {
+        for (int s = (arrSize.length / 2) + helpNum; s < arrSize.length; s++) {
             System.out.println(arrSize[s]);
         }
     }
