@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Arr18_12 {
     public static void main(String[] args) {
 
-/*        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println(" write size arr");
 
         Random random = new Random();
@@ -20,12 +20,15 @@ public class Arr18_12 {
 
         for (int i = 0; i < numArr.length; i++) {
 
-            numArr[i] = random.nextInt(100, 999);
+            numArr[i] = random.nextInt(999) + 99;
+            if (numArr[i] > 999) {
+                numArr[i] = numArr[i] - 99;
+            }
             System.out.println(i + ": " + numArr[i] + " ");
 
         }
     }
-}*/
+}
 
 /*        Scanner scan = new Scanner(System.in);
         System.out.println("size of array? ");
@@ -44,6 +47,3 @@ public class Arr18_12 {
 
     }
 }*/
-    }
-
-}
