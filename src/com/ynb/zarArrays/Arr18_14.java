@@ -19,14 +19,22 @@ public class Arr18_14 {
 
         System.out.println(" write size of arr :");
         int[] arrSize = new int[scanner.nextInt()];
-        int[] arrFirstHalf = new int[]{};
-        int[] arrSecondHalf = new int[]{};
 
+        int help = 0;
+        if (arrSize.length % 2 != 0) {
+            help = 1;
+        }
         for (int i = 0; i < arrSize.length; i++) {
             arrSize[i] = random.nextInt(100, 999);
-            System.out.println(arrSize[i]);
 
         }
+        for (int f = 0; f < (arrSize.length / 2) + help; f++) {
+            System.out.println(arrSize[f]);
+        }
+        System.out.println();
 
+        for (int s = (arrSize.length / 2) + help; s < arrSize.length; s++) {
+            System.out.println(arrSize[s]);
+        }
     }
 }
