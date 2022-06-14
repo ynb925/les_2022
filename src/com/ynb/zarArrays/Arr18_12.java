@@ -12,11 +12,11 @@ public class Arr18_12 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+
         System.out.println(" write size arr");
+        int[] numArr = new int[scanner.nextInt()];
 
         Random random = new Random();
-
-        int[] numArr = new int[scanner.nextInt()];
 
         for (int i = 0; i < numArr.length; i++) {
 

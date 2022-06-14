@@ -10,5 +10,22 @@ package com.ynb.zarArrays;
 public class Arr18_13 {
     public static void main(String[] args) {
 
+        int[] arr = new int[]{
+                -5, 10, 99, -125, 898, 124, 999, 0, 1, 125, 983
+        };
+
+        for (int i : arr) {
+            System.out.print(" |" + i + " ");
+        }
     }
-}
+    }
+
+/*        int[] arr = new int[]{
+                -5, 10, 99, -125, 898, 124, 999, 0, 1, 125, 983
+        };
+
+        for (int i : arr) {
+            System.out.print(" |" + i + " ");
+        }
+    }
+}*/
