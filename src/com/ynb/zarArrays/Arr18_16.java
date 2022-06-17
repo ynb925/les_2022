@@ -18,19 +18,30 @@ public class Arr18_16 {
         Random random = new Random();
 
         System.out.println(" wrk cycle count: ");
-        int countNum = scanner.nextInt();
-        int beforeNum = 0;
+        int[] arrSize = new int[scanner.nextInt()];
 
-        for (int i = 0; i < countNum; i++) {
 
-            System.out.println(" wrt num: ");
-            int enterNum = scanner.nextInt();
+        for (int i = 0; i < arrSize.length; i++) {
+            arrSize[i] = random.nextInt(10, 100);
+            System.out.println("test" + i + "| " + arrSize[i]);
+        }
+        System.out.println(" print res: even nums ");
+        for (int e = 0; e < arrSize.length; e++) {
+            if (arrSize[e] % 2 == 0) {
+                System.out.println("even" + e + "| " + arrSize[e]);
+            }
+        }
+        System.out.println(" print res: odd nums  ");
+        for (int o = 0; o < arrSize.length; o++) {
+            if (arrSize[o] % 2 != 0) {
+                System.out.println("odd" + o + "| " + arrSize[o]);
+            }
 
-            System.out.println("eNum | " + enterNum + "    " + "befNum | " + beforeNum + " _________ | count |" + i);
-            beforeNum = enterNum;
         }
     }
 }
+
+
 
 /*
     Scanner scanner = new Scanner(System.in);
