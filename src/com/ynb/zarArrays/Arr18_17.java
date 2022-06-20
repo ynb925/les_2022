@@ -17,6 +17,7 @@ public class Arr18_17 {
         Scanner arrSizeNum = new Scanner(System.in);
         Random random = new Random();
 
+        System.out.println(" wrt size of arr ");
         int[] arr = new int[arrSizeNum.nextInt()];
 
         System.out.println(" print all arr nums ");
