@@ -1,7 +1,7 @@
 package com.ynb.zarArrays;
 
-import java.util.Random;
-import java.util.Scanner;
+import static com.ynb.zarArrays.CreateArray.createArr;
+import static com.ynb.zarArrays.CreateArray.printArr;
 
 /**
  * Задание 19.18 Напишите метод, который получает в качестве параметра массив
@@ -13,33 +13,21 @@ import java.util.Scanner;
 
 public class Arr19_18 {
     public static void main(String[] args) {
+        int[] arrSize = createArr(10, 100);
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println(" write size of arr :");
-        int[] arrSize = new int[scanner.nextInt()];
-
-        mirrorArray(arrSize);
+        printArr(arrSize);
+        System.out.println(mirrorArray(arrSize));
 
     }
 
-    public static void mirrorArray(int[] array) {
-        Random random = new Random();
-
-
-        for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(10, 100);
-            System.out.print(array[i] + " ");
-        }
-        System.out.println();
-        System.out.println("--------------------------------");
-
-        for (int j : array) {
-            if (array[array.length - 1] > array[j]) {
-                System.out.println("true");
-            } else {
-                System.out.println("false");
+    public static boolean mirrorArray(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] <= array[i - 1]) {
+                //   System.out.print("false");
+                return false;
             }
         }
+        //  System.out.println("true");
+        return true;
     }
 }
