@@ -1,7 +1,6 @@
 package com.ynb.zarArrays;
 
 import java.util.Random;
-import java.util.Scanner;
 
 /**
  * Задание 19.7 Напишите метод, который получает в качестве параметра массив и заполняет его
