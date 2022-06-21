@@ -15,12 +15,12 @@ public class Arr19_13 {
         System.out.println(" arr size ");
         int[] arr = new int[scanner.nextInt()];
         System.out.println(" num for print into arr");
-        int printNum = scanner.nextInt();
+        int fillArrayNum = scanner.nextInt();
 
-        arrPrintNum(arr, printNum);
+        fillArray(arr, fillArrayNum);
     }
 
-    public static void arrPrintNum(int[] array, int value) {
+    public static void fillArray(int[] array, int value) {
 
         for (int i = 0; i < array.length; i++) {
             array[i] = value;
