@@ -29,7 +29,7 @@ public class Arr18_17 {
         }
         System.out.println("------- data input -------------");
 
-        System.out.println(" "); //{0 1 2 3 4 5}
+        System.out.println(" ");
         for (int i = 0, j = arr.length - 1; i < midleArr; i++, j--) {
             System.out.print(arr[i] + " " + arr[j]);
             System.out.println();
