@@ -33,10 +33,10 @@ public class Arr19_17 {
         for (int i = 0, j = midleArr + 1; i < midleArr; i++, j++) {
             array[i] = random.nextInt(10, 100);
             array[j] = array[i];
-            array[i] = array[j];
         }
         if (array.length % 2 != 0) {
             array[midleArr] += random.nextInt(10, 100);
         }
     }
 }
+
