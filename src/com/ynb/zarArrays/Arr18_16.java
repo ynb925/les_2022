@@ -42,24 +42,3 @@ public class Arr18_16 {
     }
 }
 
-
-
-/*
-    Scanner scanner = new Scanner(System.in);
-    Random random = new Random();
-
-        System.out.println(" wrk cycle count: ");
-                int countNum = scanner.nextInt();
-                int beforeNum = 0;
-
-                for (int i = 0; i < countNum; i++) {
-
-        System.out.println(" wrt num: ");
-        int enterNum = scanner.nextInt();
-
-        System.out.println("eNum | " + enterNum + "    " + "befNum | " + beforeNum + " _________ | count |" + i);
-        beforeNum = enterNum;
-        }
-        }
-        }
-*/
