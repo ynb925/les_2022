@@ -23,11 +23,13 @@ public class Arr18_18 {
         System.out.println("------- data input -------------");
         for (int i = 0; i < arrSize.length; i++) {
             arrSize[i] = random.nextInt(10, 100);
-            System.out.println(arrSize[i] + " ");
+            System.out.print(arrSize[i] + " ");
         }
+        System.out.println();
         System.out.println("------- data input -------------");
 
-        for (int f = 0; f <  midleArr; f++) {
+        System.out.println();
+        for (int f = 0; f < midleArr; f++) {
             System.out.print("   " + arrSize[f]);
         }
         System.out.println();
