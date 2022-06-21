@@ -26,6 +26,10 @@ public class Arr18_17 {
             arr[i] = random.nextInt(100, 1000);
             System.out.println("index: " + i + "| " + arr[i]);
         }
-
+        System.out.println(" ");
+        int midleArr = arr.length / 2;
+        for (int f = midleArr; f < midleArr + 1; f++) {
+            System.out.print("|" + f + ":  " + arr[f]);
+        }
     }
 }
