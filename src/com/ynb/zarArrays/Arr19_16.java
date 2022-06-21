@@ -33,8 +33,7 @@ public class Arr19_16 {
         System.out.println("------- data input -------------");
 
         for (int i = 0, j = array.length - 1; i < midleArr; i++, j--) {
-            System.out.print(array[i] + " " + array[j]);
-            System.out.println();
+            System.out.print(array[i] + " " + array[j] + " ");
         }
     }
 }
