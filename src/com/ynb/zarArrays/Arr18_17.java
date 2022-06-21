@@ -29,16 +29,14 @@ public class Arr18_17 {
         }
         System.out.println("------- data input -------------");
 
-        System.out.println(" ");
-        for (int start = 0; start < midleArr; start++) {
-            System.out.print(" " + arr[start] + " ");
+        System.out.println(" "); //{0 1 2 3 4 5}
+        for (int i = 0, j = arr.length - 1; i < midleArr; i++, j--) {
+            System.out.print(arr[i] + " " + arr[j]);
+            System.out.println();
         }
-        for (int fine = arr.length - 1; fine > midleArr; fine--) {
-            System.out.print(" " + arr[fine] + " ");
-        }
-        System.out.println(" ");
-        for (int centr = midleArr; centr < midleArr + 1; centr++) {
-            System.out.print("centr index |" + centr + ":  " + arr[centr]);
-        }
+
+        if (arr.length % 2 != 0)
+            System.out.print("centr index |" + midleArr + ":  " + arr[midleArr]);
+
     }
 }
