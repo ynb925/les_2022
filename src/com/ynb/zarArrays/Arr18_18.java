@@ -18,7 +18,7 @@ public class Arr18_18 {
         System.out.println(" write size of arr :");
         int[] arrSize = new int[scanner.nextInt()];
 
-        int midleArr = arrSize.length / 2;
+        int midleArr = (arrSize.length / 2) - 1;
 
         System.out.println("------- data input -------------");
         for (int i = 0; i < arrSize.length; i++) {
@@ -29,12 +29,11 @@ public class Arr18_18 {
         System.out.println("------- data input -------------");
 
         System.out.println();
-        for (int f = 0; f < midleArr; f++) {
+        for (int f = 0; f <= midleArr; f++) {
             System.out.print("   " + arrSize[f]);
         }
         System.out.println();
-
-        for (int s = arrSize.length - 1; s > midleArr - 1; s--) {
+        for (int s = arrSize.length - 1; s > midleArr; s--) {
             System.out.print("   " + arrSize[s]);
         }
         System.out.println();
