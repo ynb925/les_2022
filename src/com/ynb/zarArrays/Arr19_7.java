@@ -13,9 +13,7 @@ import java.util.Random;
 public class Arr19_7 {
     public static void main(String[] args) {
 
-        Random random = new Random();
-        int randomSize = random.nextInt(1, 20);
-        int[] arr = new int[randomSize];
+        int[] arr = new int[100];
         randomArray(arr);
     }
 

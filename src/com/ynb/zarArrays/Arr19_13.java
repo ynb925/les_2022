@@ -9,23 +9,21 @@ import java.util.Scanner;
 
 public class Arr19_13 {
     public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println(" arr size ");
-        Scanner scanner = new Scanner(System.in);
-
         int[] arr = new int[scanner.nextInt()];
-
-        arrPrintNum(arr);
-    }
-
-    public static void arrPrintNum(int[] array) {
-
-        Scanner scanner = new Scanner(System.in);
-
         System.out.println(" num for print into arr");
         int printNum = scanner.nextInt();
 
+        arrPrintNum(arr, printNum);
+    }
+
+    public static void arrPrintNum(int[] array, int value) {
+
         for (int i = 0; i < array.length; i++) {
-            array[i] = printNum;
+            array[i] = value;
             System.out.print(array[i] + " ");
         }
     }
