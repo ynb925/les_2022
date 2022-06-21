@@ -7,7 +7,8 @@ import java.util.Scanner;
  * Задание 19.16 Любопытненько)
  * Напишите метод, который получает в качестве параметра массив и заполняет
  * его положительными случайными двузначными числами так, чтобы значение
- * первого элемента было равно значению последнего, значение второго элемента
+ * первого элемента было равно значению последнего,
+ * значение второго элемента
  * было равно значению предпоследнего и так далее
  */
 
@@ -19,21 +20,22 @@ public class Arr19_16 {
         int[] arrSize = new int[scanner.nextInt()];
 
         mirrorArray(arrSize);
+
+        for (int j : arrSize) {
+            System.out.print(j + " ");
+        }
     }
 
     public static void mirrorArray(int[] array) {
         Random random = new Random();
         int midleArr = array.length / 2;
 
-        for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(10, 100);
-            System.out.print(array[i] + " ");
-        }
-        System.out.println();
-        System.out.println("------- data input -------------");
-
         for (int i = 0, j = array.length - 1; i < midleArr; i++, j--) {
-            System.out.print(array[i] + " " + array[j] + " ");
+            array[i] = random.nextInt(10, 100);
+            array[j] = array[i];
+        }
+        if (array.length % 2 != 0) {
+            array[midleArr] += random.nextInt(10, 100);
         }
     }
 }
