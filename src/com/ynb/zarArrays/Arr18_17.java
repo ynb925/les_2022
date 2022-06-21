@@ -20,16 +20,25 @@ public class Arr18_17 {
 
         System.out.println(" wrt size of arr ");
         int[] arr = new int[arrSizeNum.nextInt()];
+        int midleArr = arr.length / 2;
 
-        System.out.println(" print all arr nums ");
+        System.out.println("------- data input -------------");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(100, 1000);
             System.out.println("index: " + i + "| " + arr[i]);
         }
+        System.out.println("------- data input -------------");
+
         System.out.println(" ");
-        int midleArr = arr.length / 2;
-        for (int f = midleArr; f < midleArr + 1; f++) {
-            System.out.print("|" + f + ":  " + arr[f]);
+        for (int start = 0; start < midleArr; start++) {
+            System.out.print(" " + arr[start] + " ");
+        }
+        for (int fine = arr.length - 1; fine > midleArr; fine--) {
+            System.out.print(" " + arr[fine] + " ");
+        }
+        System.out.println(" ");
+        for (int centr = midleArr; centr < midleArr + 1; centr++) {
+            System.out.print("centr index |" + centr + ":  " + arr[centr]);
         }
     }
 }
