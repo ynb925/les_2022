@@ -1,7 +1,5 @@
 package com.ynb;
 
-import java.util.Scanner;
-
 public class test_javaRush {
     public static void main(String[] args) {
         int a = 5;
