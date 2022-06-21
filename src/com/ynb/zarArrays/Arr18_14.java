@@ -22,7 +22,7 @@ public class Arr18_14 {
 
         int midleArr = arrSize.length / 2;//2
 
-        if ( arrSize.length % 2 != 0) {
+        if (arrSize.length % 2 != 0) {
             midleArr++;//3
         }
         for (int i = 0; i < arrSize.length; i++) {
@@ -42,9 +42,4 @@ public class Arr18_14 {
     }
 }
 
-/*
-int middleOfArray = array.length / 2;
-(arrsize  /2) ++
- if (array.length % 2 != 0){
-         middleOfArray++; // middleOfArray = middleOfArray + 1;
-         }*/
+
