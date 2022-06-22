@@ -2,7 +2,7 @@ package com.ynb.zarArrays;
 
 
 import static com.ynb.zarArrays.CreateArray.*;
-import static com.ynb.zarArrays.CreateArray.*;
+
 
 /**
  * Задание 19.20 Напишите метод, который получает в качестве параметра
