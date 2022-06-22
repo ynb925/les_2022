@@ -20,7 +20,6 @@ public class Arr19_20 {
 
         printArr(arrSize);
         System.out.println(equalNumArr(arrSize));
-
     }
 
     public static boolean equalNumArr(int[] array) {
@@ -37,9 +36,14 @@ public class Arr19_20 {
 }
 
 
-//  why not work double for loop ?????????
+
+
+
+
 /*
-        for (int i = 0, j = i + 1; i < array.length - 1; i++, j++) {
+
+//  why not work double for loop ?????????
+        for (int i = 0, j = i + 1; i < array.length; i++, j++) {
             if (array[j] == array[i]) {
                 return true;
             }
