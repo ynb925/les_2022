@@ -15,14 +15,16 @@ public class Arr19_23 {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
+        System.out.println(" wrt arr size:");
         int[] arr = new int[scanner.nextInt()];
+        System.out.println(" wrt X num for check in arr: ");
         int Xnum = scanner.nextInt();
 
         for (int i = 0; i < arr.length; i++) {
             arr[i] = random.nextInt(10, 20);
             System.out.println(arr[i] + " ");
-            System.out.println("--------------------------------");
         }
+        System.out.println("--------------------------------");
         System.out.println(arrСontain(arr, Xnum));
     }
 
