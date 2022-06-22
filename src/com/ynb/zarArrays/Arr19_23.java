@@ -3,7 +3,6 @@ package com.ynb.zarArrays;
 import java.util.Random;
 import java.util.Scanner;
 
-import static com.ynb.zarArrays.Arr19_22.arrNums;
 
 /**
  * Задание 19.23 Напишите метод, который принимает два параметра:
