@@ -22,10 +22,10 @@ public class Arr19_22 {
             System.out.println(arr[i] + " ");
             System.out.println("--------------------------------");
         }
-        System.out.println(arrNums(arr, Xnum));
+        System.out.println(arrСontain(arr, Xnum));
     }
 
-    public static int arrNums(int[] array, int value) {
+    public static int arrСontain(int[] array, int value) {
         int counter = 0;
 
         for (int j : array) {

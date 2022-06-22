@@ -23,10 +23,10 @@ public class Arr19_23 {
             System.out.println(arr[i] + " ");
             System.out.println("--------------------------------");
         }
-        System.out.println(arrNums(arr, Xnum));
+        System.out.println(arrСontain(arr, Xnum));
     }
 
-    public static boolean arrNums(int[] array, int value) {
+    public static boolean arrСontain(int[] array, int value) {
 
         for (int j : array) {
             if (value == j) {

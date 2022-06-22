@@ -26,7 +26,7 @@ public class Arr19_20 {
     public static boolean equalNumArr(int[] array) {
 
         for (int i = 0; i < array.length; i++) {    //  0
-            for (int j = array.length - 1; j > array.length; j--) {  // 1
+            for (int j = i + 1; j > array.length; j++) {  // 1
                 if (array[i] == array[j]) {
                     return true;
                 }
@@ -36,6 +36,8 @@ public class Arr19_20 {
     }
 }
 
+
+//  why not work double for loop ?????????
 /*
         for (int i = 0, j = i + 1; i < array.length - 1; i++, j++) {
             if (array[j] == array[i]) {
