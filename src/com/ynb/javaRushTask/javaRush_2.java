@@ -20,7 +20,6 @@ package com.ynb.javaRushTask;
 
 public class javaRush_2 {
     public static void main(String[] args) {
-
         String navigator = "Джон";
         String pilot = "Пол";
         String secondPilot = "Джордж";
@@ -28,11 +27,12 @@ public class javaRush_2 {
         createCrew(navigator, pilot, secondPilot, flightEngineer);
     }
 
-    public static void createCrew(String name1, String name2, String name3, String name4) {
+    public static void createCrew(String navigator, String pilot, String secondPilot, String flightEngineer){
         System.out.println("Четвёрка, которой предстоит покорить космос:");
-        System.out.println("Штурман: " + name1);
-        System.out.println("Пилот: " + name2);
-        System.out.println("Второй пилот: " + name3);
-        System.out.println("Бортинженер: " + name4);
+        System.out.println("Штурман: " + navigator);
+        System.out.println("Пилот: " + pilot);
+        System.out.println("Второй пилот: " + secondPilot);
+        System.out.println("Бортинженер: " + flightEngineer);
+
     }
 }
