@@ -26,7 +26,7 @@ public class Arr19_24 {
     public static boolean arrСontain(int[] array) {
 
         for (int j : array) {
-            if (0 <= j) {
+            if ( j >= 0) {
                 return true;
             }
         }
