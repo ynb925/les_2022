@@ -25,10 +25,26 @@ public class Arr19_24 {
 
     public static boolean arrСontain(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] >= 0) {
-                return true;
+            if (array[i] <= 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+
+
+
+
+/*    {
+        for (int i = 0; i < array.length; i++) {    //  0
+            for (int j = i + 1; j > array.length; j++) {  // 1
+                if (array[i] >= 0 && array[j] >= 0) {
+                    return true;
+                }
             }
         }
         return false;
     }
-}
+}*/
