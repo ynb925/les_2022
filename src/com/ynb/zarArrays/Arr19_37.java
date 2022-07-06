@@ -11,10 +11,10 @@ public class Arr19_37 {
     public static void main(String[] args) {
 
         int[] array = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 12};
-        arrayBigindexValue(array);
+        biggestValue(array);
     }
 
-    public static void arrayBigindexValue(int[] array) {
+    public static void biggestValue(int[] array) {
 
         int bigValue = 0;
         int index = 0;
