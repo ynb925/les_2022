@@ -25,7 +25,7 @@ public class Arr19_24 {
 
     public static boolean arrConti(int[] array) {
         for (int j : array) {
-            if (j <= 0) {
+            if (j < 0) {
                 return false;
             }
         }
