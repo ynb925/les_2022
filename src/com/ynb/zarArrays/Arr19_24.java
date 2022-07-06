@@ -20,12 +20,12 @@ public class Arr19_24 {
             System.out.println(arr[i] + " ");
         }
         System.out.println("--------------------------------");
-        System.out.println(arrСontain(arr));
+        System.out.println(arrConti(arr));
     }
 
-    public static boolean arrСontain(int[] array) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] <= 0) {
+    public static boolean arrConti(int[] array) {
+        for (int j : array) {
+            if (j <= 0) {
                 return false;
             }
         }
@@ -34,17 +34,3 @@ public class Arr19_24 {
 }
 
 
-
-
-
-/*    {
-        for (int i = 0; i < array.length; i++) {    //  0
-            for (int j = i + 1; j > array.length; j++) {  // 1
-                if (array[i] >= 0 && array[j] >= 0) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-}*/
