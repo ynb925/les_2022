@@ -8,7 +8,6 @@ package com.ynb.zarArrays;
 public class Arr19_30 {
     public static void main(String[] args) {
         int[] array = new int[]{1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10};
-        System.out.println("--------------------------------");
         System.out.println(arrayOrder(array));
     }
 
