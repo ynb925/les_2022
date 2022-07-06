@@ -7,23 +7,20 @@ package com.ynb.zarArrays;
 
 public class Arr19_34 {
     public static void main(String[] args) {
-        int[] array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12, 13, 14, 15, 16, 17, 18,};
+        int[] array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         System.out.println(arrayBigindex(array));
     }
 
     public static int arrayBigindex(int[] array) {
         int Sum = 0;
-        int division = 0;
         int middleSum;
 
         for (int j : array) {
-            division++;
             Sum += j;
         }
-        middleSum = Sum / division;
+        middleSum = Sum / array.length;
 
         int countCell = 0;
-        int counter = 0;
         for (int j : array) {
             if (j > middleSum) {
                 countCell++;
