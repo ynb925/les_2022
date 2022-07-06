@@ -12,18 +12,20 @@ public class Arr19_27 {
     public static void main(String[] args) {
         int[] array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         System.out.println("--------------------------------");
-        System.out.println(sumArray(array));
-    }
 
-    public static int sumArray(int[] array) {
-        int sum = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.println(" enter index number :");
         int index = scanner.nextInt();
-        for (int i = 0; i <= index; i++) {
+
+        System.out.println(sumArray(array, index));
+    }
+
+    public static int sumArray(int[] array, int value) {
+        int sum = 0;
+
+        for (int i = 0; i <= value; i++) {
             sum += array[i];
         }
         return sum;
     }
-
 }

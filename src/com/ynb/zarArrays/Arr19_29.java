@@ -11,11 +11,7 @@ public class Arr19_29 {
     public static void main(String[] args) {
         int[] array = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         System.out.println("--------------------------------");
-        System.out.println(sumArray(array));
-    }
 
-    public static int sumArray(int[] array) {
-        int sum = 0;
         Scanner scanner = new Scanner(System.in);
 
         System.out.println(" enter 1st index :");
@@ -23,7 +19,13 @@ public class Arr19_29 {
         System.out.println(" enter 2nd index :");
         int index2 = scanner.nextInt();
 
-        for (int i = index1; i <= index2; i++) {
+        System.out.println(sumArray(array, index1, index2));
+    }
+
+    public static int sumArray(int[] array, int value1, int value2) {
+        int sum = 0;
+
+        for (int i = value1; i <= value2; i++) {
             sum += array[i];
         }
         return sum;
