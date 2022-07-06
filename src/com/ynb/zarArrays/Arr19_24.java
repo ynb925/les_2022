@@ -24,9 +24,8 @@ public class Arr19_24 {
     }
 
     public static boolean arrСontain(int[] array) {
-
-        for (int j : array) {
-            if ( j >= 0) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] >= 0) {
                 return true;
             }
         }

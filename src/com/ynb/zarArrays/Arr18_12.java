@@ -18,7 +18,7 @@ public class Arr18_12 {
         int[] numArr = new int[scanner.nextInt()];
 
         for (int i = 0; i < numArr.length; i++) {
-            numArr[i] = random.nextInt(100, 999);
+            numArr[i] = random.nextInt(100, 1000);
             System.out.println(i + ": " + numArr[i] + " ");
         }
     }
