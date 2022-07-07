@@ -1,7 +1,5 @@
 package com.ynb.zarArrays;
 
-import java.util.Arrays;
-
 /**
  * Задание 19.39
  * Напишите метод, который принимает в качестве параметра массив целых чисел и «переворачивает» его.
@@ -11,16 +9,22 @@ import java.util.Arrays;
 
 public class Arr19_39 {
     public static void main(String[] args) {
+        int[] array = new int[]{1, 2, 3, 4, 5, 6, 7};
 
-        int[] arr = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-         System.out.println(Arrays.toString(arrReWrite(arr)));
+        overturnArray(array);
+
+        for (int j : array) {
+            System.out.print(j + " ");
+        }
     }
 
-    public static int[] arrReWrite(int[] array) {
-        int[] arraynew = new int[array.length];
-        for (int i = 0, j = array.length - 1; i < array.length; i++, j--) {
-            arraynew[i] = array[j];
+    public static void overturnArray(int[] arr) {
+        for (int i = 0, j = arr.length - 1; i < arr.length / 2; i++, j--) {
+
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
         }
-        return arraynew;
     }
 }
+
