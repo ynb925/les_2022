@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Напишите метод, который получает в качестве параметров два упорядоченных по возрастанию массива и возвращает
  * упорядоченный по возрастанию массив, содержащий значения обоих массивов-параметров, но без повторов значений.
  * <p>
- * Например, если массивы-параметры содержат    1, 3, 5, 7     and   2, 5, 7, 9, 11,
+ * Например, если массивы-параметры содержат    1, 3, 5, 7     and    2, 5, 7, 9, 11,
  * то выходной массив содержит значения             1, 2, 3, 5, 7, 9, 11.
  */
 
@@ -18,7 +18,6 @@ public class Arr19_43 {
         int[] arr2 = new int[]{2, 5, 7, 9, 11};
 
         aarsSorting(arr1, arr2);
-
     }
 
     public static void aarsSorting(int[] array1, int[] array2) {
@@ -31,6 +30,11 @@ public class Arr19_43 {
             }
         }
         Arrays.sort(arraynew);
-        System.out.print(Arrays.toString(arraynew));
+        System.out.print(arraynew[0] + " ");
+        for (int i = 1; i < arraynew.length; i++) {
+            if (arraynew[i] != arraynew[i - 1]) {
+                System.out.print(arraynew[i] + " ");
+            }
+        }
     }
 }
