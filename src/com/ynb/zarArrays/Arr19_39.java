@@ -9,7 +9,7 @@ package com.ynb.zarArrays;
 
 public class Arr19_39 {
     public static void main(String[] args) {
-        int[] array = new int[]{1, 2, 3, 4, 5, 6, 7};
+        int[] array = new int[]{1, 3, 6, 2, 7};
 
         overturnArray(array);
 
