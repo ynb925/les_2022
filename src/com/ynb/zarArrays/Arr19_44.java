@@ -1,5 +1,7 @@
 package com.ynb.zarArrays;
 
+import java.util.Arrays;
+
 /**
  * Задание 19.44 Напишите метод, который принимает в качестве параметра
  * массив целых чисел и сдвигает все элементы массива,
@@ -11,6 +13,15 @@ package com.ynb.zarArrays;
 
 public class Arr19_44 {
     public static void main(String[] args) {
+        int[] arr = new int[]{1, 2, 3, 4, 5};
 
+        int temp;
+        for (int i = 0; i < arr.length - 1; i++) {
+            temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+        }
+        for (int j : arr)
+            System.out.print(j + " ");
     }
 }
