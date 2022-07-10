@@ -13,6 +13,10 @@ public class Arr19_44 {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 4, 5};
 
+        arrMoveRight(arr);
+    }
+
+    private static void arrMoveRight(int[] arr) {
         int temp;
         for (int i = 0; i < arr.length - 1; i++) {
             temp = arr[i];

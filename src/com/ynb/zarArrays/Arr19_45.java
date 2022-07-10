@@ -11,6 +11,11 @@ public class Arr19_45 {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 4, 5};
 
+
+        arrMoveLeft(arr);
+    }
+
+    private static void arrMoveLeft(int[] arr) {
         int temp;
         for (int i = arr.length - 1; i > 0; i--) {
             temp = arr[i - 1];
@@ -21,3 +26,4 @@ public class Arr19_45 {
             System.out.print(j + " ");
     }
 }
+
