@@ -20,11 +20,11 @@ public class Arr19_48 {
     }
 
     private static boolean arrEqualNums(int[] array1, int[] array2) {
-        point:
+        first:
         for (int k : array1) {
             for (int i : array2) {
                 if (k == i)
-                    continue point;
+                    continue first;
             }
             return false;
         }
