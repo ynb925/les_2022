@@ -11,16 +11,17 @@ public class Arr19_45 {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 4, 5};
 
-        arrMoveLeft(arr);
+        arrMoveLeft(arr);//{5 ,1, 2, 3, 4}
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(i + "-" + arr[i]);
+        }
     }
 
     private static void arrMoveLeft(int[] arr) {
-        int temp;
-        for (int i = arr.length - 1; i > 0; i--) {
-            temp = arr[i - 1];
-            arr[i - 1] = arr[i];
-            arr[i] = temp;
-        }
+        int temp = arr[arr.length - 1];
+        System.arraycopy(arr, 0, arr, 1, arr.length - 1);
+        arr[0] = temp;
         for (int j : arr)
             System.out.print(j + " ");
     }
