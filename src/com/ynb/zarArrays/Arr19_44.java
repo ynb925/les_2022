@@ -19,9 +19,7 @@ public class Arr19_44 {
     private static void arrMoveRight(int[] arr) {
         int temp = arr[0];
         int lim = arr.length - 1;
-        for (int i = 0; i < lim; i++) {
-            arr[i] = arr[i + 1];
-        }
+        System.arraycopy(arr, 1, arr, 0, lim);
         arr[arr.length - 1] = temp;
         for (int j : arr)
             System.out.print(j + " ");
