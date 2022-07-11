@@ -12,16 +12,13 @@ package com.ynb.zarArrays;
 public class Arr19_47 {
     public static void main(String[] args) {
         int[] arr1 = new int[]{1, 2, 3, 4, 5, 5};
-        int[] arr2 = new int[]{1, 2, 3, 4, 5, 5};
+        int[] arr2 = new int[]{1, 2, 3, 4, 2, 5};
 
         System.out.println(arrEqual(arr1, arr2));
     }
 
     private static boolean arrEqual(int[] array1, int[] array2) {
 
-        if (array1.length != array2.length) {
-            return false;
-        }
         for (int i = 0, j = 0; i < array1.length; i++, j++) {
             if (array1[j] != array2[j]) {
                 return false;
