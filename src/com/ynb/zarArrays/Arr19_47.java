@@ -14,13 +14,11 @@ public class Arr19_47 {
         int[] arr1 = new int[]{1, 2, 3, 4, 5, 5};
         int[] arr2 = new int[]{1, 2, 3, 4, 5, 5};
 
-        arrEqual(arr1, arr2);
         System.out.println(arrEqual(arr1, arr2));
     }
 
     private static boolean arrEqual(int[] array1, int[] array2) {
 
-        int limit;
         if (array1.length != array2.length) {
             return false;
         }
