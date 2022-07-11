@@ -17,13 +17,25 @@ public class Arr19_44 {
     }
 
     private static void arrMoveRight(int[] arr) {
-        int temp;
-        for (int i = 0; i < arr.length - 1; i++) {
-            temp = arr[i];
+        int temp = arr[0];
+        int lim = arr.length - 1;
+        for (int i = 0; i < lim; i++) {
             arr[i] = arr[i + 1];
-            arr[i + 1] = temp;
         }
+        arr[arr.length - 1] = temp;
         for (int j : arr)
             System.out.print(j + " ");
     }
 }
+/*
+
+    int temp;
+        for (int i = 0; i < arr.length - 1; i++) {
+        temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = temp;
+        }
+        for (int j : arr)
+        System.out.print(j + " ");
+        }
+        }*/
