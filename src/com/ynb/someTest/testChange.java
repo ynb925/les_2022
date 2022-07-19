@@ -8,4 +8,12 @@ public class testChange {
 
         }
     }
+
+    public static void method() {
+        int a = 8;
+        for (int i = 0; i < a; i++) {
+            System.out.println(i);
+
+        }
+    }
 }
