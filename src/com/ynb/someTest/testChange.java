@@ -7,6 +7,7 @@ public class testChange {
             System.out.println(i);
 
         }
+        method();
     }
 
     public static void method() {
